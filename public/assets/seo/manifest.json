@@ -1,0 +1,22 @@
+{
+  "name": "Dragon Fit",
+  "short_name": "DragonFit",
+  "description": "Aplicativo para geração inteligente de treinos e rotinas alimentares.",
+  "start_url": "/",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "pt-BR",
+  "categories": ["health", "fitness", "lifestyle"],
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
