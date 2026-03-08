@@ -1,19 +1,20 @@
+import "./globals.css";
+
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
-import "./globals.css";
 
 export const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
-})
+});
 
 export const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-poppins",
   display: "swap",
-})
+});
 
 export const metadata: Metadata = {
   title: {
@@ -44,8 +45,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Dragon Fit",
-    description:
-      "Treinos inteligentes e rotina alimentar personalizada.",
+    description: "Treinos inteligentes e rotina alimentar personalizada.",
     url: "https://next-dragon-fit.vercel.app",
     siteName: "Dragon Fit",
     locale: "pt_BR",
@@ -55,12 +55,11 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Dragon Fit",
-    description:
-      "Treinos inteligentes e rotina alimentar personalizada.",
+    description: "Treinos inteligentes e rotina alimentar personalizada.",
   },
 
   manifest: "/assets/seo/manifest.json",
-}
+};
 
 export default function RootLayout({
   children,
@@ -70,7 +69,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="scroll-smooth">
       <body
-        className={`${inter.variable} ${poppins.variable} antialiased bg-slate-950 text-white`}
+        className={`${inter.variable} ${poppins.variable} antialiased bg-gray-950 text-zinc-100`}
       >
         {children}
       </body>
