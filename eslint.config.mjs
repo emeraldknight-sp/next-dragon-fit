@@ -16,18 +16,15 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
   ]),
-  {
-    plugins: {
-      prettier: pluginPrettier,
-      "simple-import-sort": simpleImportSort,
-    },
-    rules: {
-      "prettier/prettier": "error",
-      "simple-import-sort/imports": "error",
-      "simple-import-sort/exports": "error",
-    },
+  plugins: {
+    prettier: pluginPrettier,
+    "simple-import-sort": simpleImportSort,
   },
-  prettier,
+  rules: {
+    "prettier/prettier": "error",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+  },
 ]);
 
 export default eslintConfig;
